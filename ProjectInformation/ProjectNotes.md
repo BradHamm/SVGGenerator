@@ -21,4 +21,4 @@ Here is the criterium and limitations of the user inputs as well as the expected
 Jest should be used for test in the program.
 
 All package extensions to be used in the project:
-inquirer, fs, jest, 
+inquirer, fs, jest
