@@ -21,6 +21,11 @@ const collectValues = async () => {
             message: 'Enter the text color in either hexidecimal values or via keyword: '
         },
         {
+            type: 'input',
+            name: 'font',
+            message: 'Enter the desired font you would like to use for the SVG text. Incorrect inputs will be defaulted to Arial:'
+        },
+        {
             type: 'list',
             name: 'shapeVal',
             message: 'Select a shape: ',
@@ -60,7 +65,7 @@ const logoGeneration = async () => {
         <svg xmlns="http://www.w3.org/2000/svg" width="300" height="200">
         <g>
           ${shape.render()}
-          <text x="250" y="180" text-anchor="middle" alignment-baseline="middle" fill="${userInput.textColorVal} font-size="40"">
+          <text x="150" y="120" text-anchor="middle" alignment-baseline="middle" fill="${userInput.textColorVal}" font-size="40" font-family="${userInput.font}"">
             ${userInput.textVal}
           </text>
         </g>
